@@ -1,0 +1,6 @@
+#!/bin/bash
+# väljastab tervituse kujul "Tere, user!"
+
+echo -n "Tere, "
+echo -n `whoami`
+echo "!"
