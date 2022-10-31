@@ -1,0 +1,17 @@
+#!/bin/bash
+#
+# paarsuse kontroll
+if [ $# -ne 1 ]
+then
+	echo -n "sisesta suvaline täisarv. Näiteks: $0 3"
+else
+	arv=$1
+	jaak=$(( $arv % 2 ))
+	if
+		[ $jaak -eq 0 ]
+	then
+   		echo "$arv on paaris"
+	else
+	   	echo "$arv on paaritu"
+	fi
+fi
